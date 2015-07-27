@@ -75,5 +75,10 @@ public class Data {
       final Product that = (Product) obj;
       return Objects.equals(this.name, that.getName());
     }
+
+    public Product price(final BigDecimal price) {
+      setPrice(price);
+      return this;
+    }
   }
 }
